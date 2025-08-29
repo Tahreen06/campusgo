@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusGo - Destinations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #222;
+    }
+    .search-box {
+      margin: 20px 0;
+    }
+    input {
+      padding: 10px;
+      width: 60%;
+      border: 2px solid #222;
+      border-radius: 8px;
+    }
+    .locations {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    button {
+      padding: 15px 25px;
+      border: none;
+      border-radius: 10px;
+      background: #222;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #444;
+    }
+    .directions {
+      margin-top: 30px;
+      padding: 15px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CampusGo - Choose Your Destination</h1>
+  <p>Scan at the gate → Select your destination → Get step-by-step directions</p>
+
+  <div class="search-box">
+    <input type="text" id="search" placeholder="Search for a location...">
+  </div>
+
+  <div class="locations" id="locations">
+    <button onclick="showDirections('Computer Science Department')">Computer Science Dept.</button>
+    <button onclick="showDirections('Electronics Department')">Electronics Dept.</button>
+    <button onclick="showDirections('Library')">Library</button>
+    <button onclick="showDirections('Canteen')">Canteen</button>
+    <button onclick="showDirections('HOD Cabin')">HOD Cabin</button>
+    <button onclick="showDirections('Main Auditorium')">Main Auditorium</button>
+  </div>
+
+  <div class="directions" id="directionsBox">
+    <h2>Directions</h2>
+    <p id="directionsText"></p>
+  </div>
+
+  <script>
+    const directions = {
+      "Computer Science Department": "From Gate → Take left → Go to 1st Floor → Room 101.",
+      "Electronics Department": "From Gate → Take right → 2nd Floor → Room 210.",
+      "Library": "From Gate → Walk straight 100m → Library is on your right.",
+      "Canteen": "From Gate → Walk straight 50m → Canteen is beside Block B.",
+      "HOD Cabin": "From Gate → Go to Block A → 2nd Floor → HOD Cabin.",
+      "Main Auditorium": "From Gate → Straight 200m → Auditorium on the left."
+    };
+
+    function showDirections(location) {
+      document.getElementById("directionsBox").style.display = "block";
+      document.getElementById("directionsText").innerText = directions[location];
+    }
+
+    // 🔍 Search filter
+    document.getElementById("search").addEventListener("input", function() {
+      const query = this.value.toLowerCase();
+      const buttons = document.querySelectorAll(".locations button");
+      buttons.forEach(btn => {
+        if (btn.innerText.toLowerCase().includes(query)) {
+          btn.style.display = "inline-block";
+        } else {
+          btn.style.display = "none";
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+{
+  "edges": [
+    {
+      "from": "ENTRY_QR",
+      "to": "SEMINAR_HALL",
+      "dist": 12
+    },
+    {
+      "from": "SEMINAR_HALL",
+      "to": "HOD_CABIN",
+      "dist": 20
+    },
+    {
+      "from": "SEMINAR_HALL",
+      "to": "LAB_101",
+      "dist": 15
+    },
+    {
+      "from": "LAB_101",
+      "to": "LAB_102",
+      "dist": 10
+    },
+    {
+      "from": "SEMINAR_HALL",
+      "to": "FAC_A",
+      "dist": 10
+    },
+    {
+      "from": "SEMINAR_HALL",
+      "to": "MAKER_LAB",
+      "dist": 18
+    },
+    {
+      "from": "SEMINAR_HALL",
+      "to": "CLASS_201",
+      "dist": 25
+    },
+    {
+      "from": "CLASS_201",
+      "to": "CLASS_202",
+      "dist": 8
+    },
+    {
+      "from": "CLASS_201",
+      "to": "FAC_B",
+      "dist": 12
+    }
+  ]
+}

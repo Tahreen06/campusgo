@@ -1,0 +1,11 @@
+id,name,type,floor,notes
+ENTRY_QR,Corridor Entry,entry,0,ONLY QR to be printed
+SEMINAR_HALL,Seminar Hall,hall,0,
+HOD_CABIN,HOD Cabin,office,0,Dept. Head cabin
+LAB_101,Computer Lab 101,lab,0,
+LAB_102,Computer Lab 102,lab,0,
+CLASS_201,Classroom 201,classroom,1,
+CLASS_202,Classroom 202,classroom,1,
+FAC_A,Faculty Room A,faculty,0,
+FAC_B,Faculty Room B,faculty,1,
+MAKER_LAB,Maker's Lab,lab,0,

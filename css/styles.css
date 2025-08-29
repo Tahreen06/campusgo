@@ -1,0 +1,102 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Segoe UI, Roboto, Inter, Arial;
+  background: #f3f4f6;
+}
+
+/* Header Bar */
+.bar {
+  background: #111827;
+  color: #fff;
+  padding: 16px 20px;
+}
+
+.bar h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.bar .sub {
+  margin: 4px 0 0;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 16px;
+  display: grid;
+  gap: 16px;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+/* Form Row */
+.row {
+  display: grid;
+  gap: 8px;
+  margin: 8px 0 16px;
+}
+
+/* Labels */
+label {
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Selects and Buttons */
+select,
+button {
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+}
+
+/* Button Styles */
+button {
+  background: #111827;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Status Message */
+#status {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+/* Code Previews */
+pre {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 12px;
+  white-space: pre-wrap;
+}
+
+/* Footer */
+.foot {
+  padding: 16px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 12px;
+}
